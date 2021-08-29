@@ -1,102 +1,140 @@
-.navbar{
+.navbar {
     background-color: black !important;
-
-width: 100%;
-// position: fixed;
-margin-bottom: 20px;
-z-index: 1;
-.container{
-    .brand{
-        color: white;
-        font-size: 24px;
-        text-decoration: none;
-    }
-    &_right{
-        display: flex ;
-
-        ul{
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-.home_icon{
-    color: white;
-    text-decoration: none;
-}
-
-            li{
-                margin-left: 10px;
-                margin-right: 10px;
-                align-items: center;
-                list-style: none;
-                
-                color: white;
-                 &:hover{
-                    list-style: none;
-                 }
-                 a{
-                     color: white;
-                     list-style: none;
-                     
-text-decoration: none;
-                     &:hover{
-                        list-style: none;
-                     }
-                 }
-            }
-        }
-        .button{
+    width: 100%;
+    position: fixed;
+    margin-bottom: 20px;
+    z-index: 1;
+    .container {
+        .brand {
             color: white;
-            align-items: center;
-           padding: 5px;
-list-style: none;
-            align-self: center;
-            border-radius: 10px;
-            height: 40px;
-            transition: 0.3s all ease-in-out;
+            font-size: 24px;
             text-decoration: none;
-            &:hover{
-                background-color: white;
-                cursor: pointer;
-                color: black;
-            }
         }
-    
-   
-    }
-    .toggle_bar{
-        display: none;
-    }
-}
-}
-@media  screen and(max-width:768px)
-{
-    .navbar{
-        position: relative;
-   .container{
-    .container_right{
-        position: absolute;
-       top: 50px;
-       width: 100%;
-      right: 0;
-      display: none ;
-        &.open{
+        &_right {
             display: flex;
-            flex-direction: column;
-           
-           
-            z-index: 999;
-            ul{
-                flex-direction: column;
+
+            ul {
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .home_icon {
+                    color: white;
+                    text-decoration: none;
+                }
+
+                li {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    align-items: center;
+                    list-style: none;
+
+                    color: white;
+                    &:hover {
+                        list-style: none;
+                    }
+                    a {
+                        color: white;
+                        list-style: none;
+
+                        text-decoration: none;
+                        &:hover {
+                            list-style: none;
+                        }
+                    }
+                }
             }
-            background-color: rgb(0, 0, 0);
+            .button {
+                color: white;
+                align-items: center;
+                padding: 5px;
+                list-style: none;
+                align-self: center;
+                border-radius: 10px;
+                height: 40px;
+                transition: 0.3s all ease-in-out;
+                text-decoration: none;
+                &:hover {
+                    background-color: white;
+                    cursor: pointer;
+                    color: black;
+                }
+            }
+        }
+        .toggle_bar {
+            display: none;
+        }
+        .close_btn {
+            display: none;
         }
     }
-    
-    .toggle_bar{
-        display: block;
-    }
 }
+@media screen and(max-width:768px) {
+    .navbar {
+       
+        // position: relative;
+        position: fixed;
+
+        .container {
+            transition: 0.3s ease-in-out !important;
+            .container_right {
+                position: absolute;
+                top: 50px;
+                width: 100%;
+                right: 0;
+                display: none;
+                &.open {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    transition: 0.3s all;
+
+                    z-index: 999;
+                    ul {
+                        flex-direction: column;
+                        font-weight: 500;
+                        a {
+                            margin-top: 10px;
+                            font-size: 20px;
+                            margin-bottom: 10px;
+                        }
+                        li {
+                            font-size: 20px;
+
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .button {
+                        margin-left: 40px;
+                        margin-bottom: 30px;
+                        background-color: white;
+                        color: black;
+                        font-size: 20px;
+                        align-self: center;
+                        font-weight: 500;
+                    }
+                    background-color: rgb(0, 0, 0);
+                }
+            }
+
+            .toggle_bar {
+                &.open {
+                    display: block;
+                }
+                &.close {
+                    display: none;
+                }
+            }
+
+            .close_btn {
+                &.open {
+                    display: block;
+                    color: white;
+                    background-color: white;
+                    height: 20px;
+                }
+            }
+        }
     }
 }
