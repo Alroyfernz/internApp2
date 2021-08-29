@@ -1,0 +1,102 @@
+.navbar{
+    background-color: black !important;
+
+width: 100%;
+// position: fixed;
+margin-bottom: 20px;
+z-index: 1;
+.container{
+    .brand{
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+    }
+    &_right{
+        display: flex ;
+
+        ul{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+.home_icon{
+    color: white;
+    text-decoration: none;
+}
+
+            li{
+                margin-left: 10px;
+                margin-right: 10px;
+                align-items: center;
+                list-style: none;
+                
+                color: white;
+                 &:hover{
+                    list-style: none;
+                 }
+                 a{
+                     color: white;
+                     list-style: none;
+                     
+text-decoration: none;
+                     &:hover{
+                        list-style: none;
+                     }
+                 }
+            }
+        }
+        .button{
+            color: white;
+            align-items: center;
+           padding: 5px;
+list-style: none;
+            align-self: center;
+            border-radius: 10px;
+            height: 40px;
+            transition: 0.3s all ease-in-out;
+            text-decoration: none;
+            &:hover{
+                background-color: white;
+                cursor: pointer;
+                color: black;
+            }
+        }
+    
+   
+    }
+    .toggle_bar{
+        display: none;
+    }
+}
+}
+@media  screen and(max-width:768px)
+{
+    .navbar{
+        position: relative;
+   .container{
+    .container_right{
+        position: absolute;
+       top: 50px;
+       width: 100%;
+      right: 0;
+      display: none ;
+        &.open{
+            display: flex;
+            flex-direction: column;
+           
+           
+            z-index: 999;
+            ul{
+                flex-direction: column;
+            }
+            background-color: rgb(0, 0, 0);
+        }
+    }
+    
+    .toggle_bar{
+        display: block;
+    }
+}
+    }
+}
