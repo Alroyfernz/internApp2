@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./_navbar.scss";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
-import { GrClose } from "react-icons/gr";
+import { RiCloseLine } from "react-icons/ri";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -41,7 +41,7 @@ const Navbar = () => {
         </span>
 
         <span className={toggle ? "close_btn open" : "close_btn"}>
-          <GrClose className="close" onClick={handleToggle} />
+          <RiCloseLine className="close" onClick={handleToggle} />
         </span>
       </div>
     </nav>

@@ -45,7 +45,7 @@ const AddPost = () => {
                   onChange={(e) => setBody(e.target.value)}
                 ></textarea>
               </div>
-              <button className="btn btn-primary btn-lg">Add New Post</button>
+              <button className="btn btn-dark btn-lg">Add New Post</button>
             </form>
           </div>
         </div>
