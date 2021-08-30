@@ -26,10 +26,10 @@ const Navbar = () => {
               Home
             </Link>
             <li>
-              <a href="#">Posts</a>
+              <a href="/">Posts</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="/">Contact</a>
             </li>
           </ul>
           <Link to="/addPost" className="button">
@@ -41,7 +41,7 @@ const Navbar = () => {
         </span>
 
         <span className={toggle ? "close_btn open" : "close_btn"}>
-          <GrClose style={{ color: "red" }} onClick={handleToggle} />
+          <GrClose className="close" onClick={handleToggle} />
         </span>
       </div>
     </nav>

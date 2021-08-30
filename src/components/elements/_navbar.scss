@@ -83,17 +83,19 @@
                 top: 50px;
                 width: 100%;
                 right: 0;
-                display: none;
+                
+                transform: translateX(100%);
                 &.open {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     transition: 0.3s all;
-
+transform: translateX(0);
                     z-index: 999;
                     ul {
                         flex-direction: column;
                         font-weight: 500;
+                        padding: 0!important;
                         a {
                             margin-top: 10px;
                             font-size: 20px;
@@ -106,7 +108,7 @@
                         }
                     }
                     .button {
-                        margin-left: 40px;
+                        margin-left: 5px;
                         margin-bottom: 30px;
                         background-color: white;
                         color: black;
@@ -131,8 +133,11 @@
                 &.open {
                     display: block;
                     color: white;
-                    background-color: white;
+                    
                     height: 20px;
+                    .close{
+                        color: white !important;
+                    }
                 }
             }
         }

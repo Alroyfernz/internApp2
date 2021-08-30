@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import shortid from "shortid";
+
 import { createPost } from "../../actions/postAction";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
@@ -21,7 +21,7 @@ const AddPost = () => {
     history.push("/");
   };
   return (
-    <div className="container">
+    <div className="container" style={{ paddingTop: "40px" }}>
       <div className="py-4">
         <div className="card shadow">
           <div className="card-header">Add A Post</div>

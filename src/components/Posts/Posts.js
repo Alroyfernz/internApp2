@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import PostCard from "./PostCard";
+
 import { useSelector, useDispatch } from "react-redux";
 import { getPosts } from "../../actions/postAction";
 const Posts = () => {
@@ -8,7 +9,7 @@ const Posts = () => {
 
   useEffect(() => {
     dispatch(getPosts());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="row">
