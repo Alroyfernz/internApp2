@@ -14,6 +14,7 @@ export default (state = initialState, { type, payload }) => {
     case GET_POSTS:
       return {
         ...state,
+
         posts: payload,
       };
     case CREATE_POST:

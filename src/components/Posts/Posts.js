@@ -9,12 +9,12 @@ const Posts = () => {
 
   useEffect(() => {
     dispatch(getPosts());
-  }, [dispatch]);
+  }, []);
 
   return (
     <div className="row">
       {posts.map((postItem) => (
-        <PostCard postItem={postItem} />
+        <PostCard key={postItem.id} postItem={postItem} />
       ))}
     </div>
   );

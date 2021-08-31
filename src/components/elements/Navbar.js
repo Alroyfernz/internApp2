@@ -26,10 +26,7 @@ const Navbar = () => {
               Home
             </Link>
             <li>
-              <a href="/">Posts</a>
-            </li>
-            <li>
-              <a href="/">Contact</a>
+              <Link to="/"> Posts</Link>
             </li>
           </ul>
           <Link to="/addPost" className="button">
