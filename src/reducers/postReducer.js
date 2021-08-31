@@ -2,7 +2,6 @@ import {
   GET_POSTS,
   GET_POST,
   CREATE_POST,
-  UPDATE_POST,
   DELETE_POST,
 } from "../actions/types";
 
@@ -28,13 +27,7 @@ export default (state = initialState, { type, payload }) => {
         ...state,
         post: state.posts.find((postItem) => postItem.id === payload),
       };
-    case UPDATE_POST:
-      return {
-        ...state,
-        posts: state.posts.map((postItem) =>
-          postItem.id === payload.id ? payload : postItem
-        ),
-      };
+
     case DELETE_POST:
       return {
         ...state,

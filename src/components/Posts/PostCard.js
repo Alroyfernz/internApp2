@@ -14,9 +14,7 @@ const PostCard = ({ postItem }) => {
           alt={postItem.title}
           className="card-img-top"
         />
-        {/* <Link to={`/updatePost/${postItem.id}`} className="btn  ">
-          <span class="material-icons">edit</span>
-        </Link> */}
+
         <button
           className="btn"
           onClick={() => dispatch(deletePost(postItem.id))}
