@@ -9,7 +9,7 @@ const Posts = () => {
 
   useEffect(() => {
     dispatch(getPosts());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="row">
